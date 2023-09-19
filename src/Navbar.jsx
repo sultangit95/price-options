@@ -13,13 +13,13 @@ const Navbar = () => {
   ]
   return (
     <nav>
-      <div className="md:hidden duration-1000 bg-yellow-200" onClick={() => setOpen(!open)}>
+      <div className="md:hidden duration-1000 bg-purple-600 z-10 relative pl-3 py-2" onClick={() => setOpen(!open)}>
         {
-          open === false ? <AiOutlineMenu className="text-5xl text-red-600"></AiOutlineMenu> : <AiOutlineClose className="text-5xl text-red-600"></AiOutlineClose>
+          open === false ? <AiOutlineMenu className="text-5xl"></AiOutlineMenu> : <AiOutlineClose className="text-5xl text-red-600"></AiOutlineClose>
         }
       
       </div>
-      <ul className={`md:flex gap-3 ${open ? 'left-0': '-left-60'} bg-yellow-200 px-6 shadow-lg absolute md:static duration-1000`}>
+      <ul className={`w-full text-2xl text-center md:flex gap-5 z-0 ${open ? 'top-16': '-top-60'} bg-yellow-200 px-6 shadow-lg absolute md:static duration-1000`}>
         {
           routes.map(route => <Link key={route.id} route={route}></Link>)
         }

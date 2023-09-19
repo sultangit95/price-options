@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'; // ES6
 
 const Link = ({route}) => {
   return (
-      <li key={route.id}>
+      <li className='py-3' key={route.id}>
         <a href={route.path}>{route.name}</a>
       </li>
   );
