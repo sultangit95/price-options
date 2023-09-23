@@ -19,7 +19,7 @@ const Navbar = () => {
         }
       
       </div>
-      <ul className={`w-full text-2xl text-center md:flex gap-5 z-0 ${open ? 'top-16': '-top-60'} bg-yellow-200 px-6 shadow-lg absolute md:static duration-1000`}>
+      <ul className={`w-full text-2xl text-center md:flex gap-5 z-0 ${open ? 'top-16': '-top-60'} bg-amber-600 px-6 shadow-lg absolute md:static duration-1000`}>
         {
           routes.map(route => <Link key={route.id} route={route}></Link>)
         }
